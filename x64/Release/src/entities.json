@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "type": "Player",
+      "components": {
+        "TransformComponent": {
+          "x": 0.0,
+          "y": 0.0,
+          "scale": 1.0,
+          "rotation": 0.0
+        },
+        "RenderComponent": {
+          "texture": "player.png",
+          "width": 64,
+          "height": 64
+        },
+        "PhysicsComponent": {
+          "velocityX": 0.0,
+          "velocityY": 0.0,
+          "isCollidable": true
+        }
+      }
+    },
+    {
+      "type": "Enemy",
+      "components": {
+        "TransformComponent": {
+          "x": 100.0,
+          "y": 200.0,
+          "scale": 1.5,
+          "rotation": 45.0
+        },
+        "RenderComponent": {
+          "texture": "enemy.png",
+          "width": 64,
+          "height": 64
+        },
+        "PhysicsComponent": {
+          "velocityX": -1.0,
+          "velocityY": 0.0,
+          "isCollidable": true
+        }
+      }
+    }
+  ]
+}

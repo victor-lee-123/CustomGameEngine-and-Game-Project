@@ -1,0 +1,752 @@
+{
+    "textures": [
+        {
+            "name": "DigipenLogo",
+            "path": "Assets/Images/DigipenLogo.png"
+        },
+        {
+            "name": "TXTBTN_HowtoPlay.png",
+            "path": "Assets/Images/TXTBTN_HowtoPlay.png"
+        },
+        {
+            "name": "How_to_Play",
+            "path": "Assets/UI/TxtBtns/TXTBTN_HowtoPlay.png"
+        },
+        {
+            "name": "Hover_TXTBTN_TitleScreen.png",
+            "path": "Assets/Images/Hover_TXTBTN_TitleScreen.png"
+        },
+        {
+            "name": "TitleBackground",
+            "path": "Assets/UI/title.png"
+        },
+        {
+            "name": "TXTBTN_TitleScreen.png",
+            "path": "Assets/Images/TXTBTN_TitleScreen.png"
+        },
+        {
+            "name": "fire",
+            "path": "Assets/Images/armored_pro.png"
+        },
+        {
+            "name": "CreditButton",
+            "path": "Assets/UI/NormalState/credit_button.png"
+        },
+        {
+            "name": "HP Bar BG.png",
+            "path": "Assets/Images/HP Bar BG.png"
+        },
+        {
+            "name": "CreditButtonHover",
+            "path": "Assets/UI/Hover/Hover_CreditBTN.png"
+        },
+        {
+            "name": "Button_HowtoPlayBTN.png",
+            "path": "Assets/Images/Button_HowtoPlayBTN.png"
+        },
+        {
+            "name": "McDieSprite",
+            "path": "Assets/Animation/MC_Die.png"
+        },
+        {
+            "name": "BG_GameoverUI.png",
+            "path": "Assets/Images/BG_GameoverUI.png"
+        },
+        {
+            "name": "Hover_ArrowBTN.png",
+            "path": "Assets/Images/Hover_ArrowBTN.png"
+        },
+        {
+            "name": "background",
+            "path": "Assets/Images/background_main.png"
+        },
+        {
+            "name": "Hover_TXTBTN_Retry.png",
+            "path": "Assets/Images/Hover_TXTBTN_Retry.png"
+        },
+        {
+            "name": "BackButton",
+            "path": "Assets/UI/NormalState/back_button.png"
+        },
+        {
+            "name": "BG_ClearedUI.png",
+            "path": "Assets/Images/BG_ClearedUI.png"
+        },
+        {
+            "name": "RetryButton",
+            "path": "Assets/UI/NormalState/retry_button.png"
+        },
+        {
+            "name": "Button_QuitBTN.png",
+            "path": "Assets/Images/Button_QuitBTN.png"
+        },
+        {
+            "name": "SlowUI",
+            "path": "Assets/Images/SlowUI.png"
+        },
+        {
+            "name": "BackToHomeButtonHover",
+            "path": "Assets/UI/Hover/Hover_BacktoHomeBTN.png"
+        },
+        {
+            "name": "Bullet",
+            "path": "Assets/Images/MC_Bullet.png"
+        },
+        {
+            "name": "Tutorial_Sign4",
+            "path": "Assets/UI/HowToPlay/Tutorial_Sign4.png"
+        },
+        {
+            "name": "Hover_TXTBTN_QuitGame.png",
+            "path": "Assets/Images/Hover_TXTBTN_QuitGame.png"
+        },
+        {
+            "name": "Tutorial",
+            "path": "Assets/UI/TxtBtns/Tutorial.png"
+        },
+        {
+            "name": "Level1_Scene",
+            "path": "Assets/Images/Level1_Scene_Final.png"
+        },
+        {
+            "name": "blackback",
+            "path": "Assets/Images/BlackBack.png"
+        },
+        {
+            "name": "textbox",
+            "path": "Assets/Images/Textbox.png"
+        },
+        {
+            "name": "Button_ArrowBTN_L.png",
+            "path": "Assets/Images/Button_ArrowBTN_L.png"
+        },
+        {
+            "name": "Hitbox",
+            "path": "Assets/Images/Hitbox.png"
+        },
+        {
+            "name": "HTPBoard_3",
+            "path": "Assets/Images/HTPBoard_3.png"
+        },
+        {
+            "name": "PlayButton",
+            "path": "Assets/UI/NormalState/play_button.png"
+        },
+        {
+            "name": "TitleScreen_BackgroundProp.png",
+            "path": "Assets/Images/TitleScreen_Updated_BackgroundProp.png"
+        },
+        {
+            "name": "QuitButton",
+            "path": "Assets/UI/NormalState/quit_button.png"
+        },
+        {
+            "name": "HowToPlayButton",
+            "path": "Assets/UI/NormalState/howtoplay_button.png"
+        },
+        {
+            "name": "QuitButtonHover",
+            "path": "Assets/UI/Hover/Hover_QuitBTN.png"
+        },
+        {
+            "name": "BackToHomeButton",
+            "path": "Assets/UI/NormalState/backtohome_button.png"
+        },
+        {
+            "name": "PlayButtonHover",
+            "path": "Assets/UI/Hover/Hover_PlayBTN.png"
+        },
+        {
+            "name": "Button_CreditBTN.png",
+            "path": "Assets/Images/Button_CreditBTN.png"
+        },
+        {
+            "name": "HowToPlayButtonHover",
+            "path": "Assets/UI/Hover/Hover_HowtoPlayBTN.png"
+        },
+        {
+            "name": "BossBTN",
+            "path": "Assets/Images/BossBTN.png"
+        },
+        {
+            "name": "BackButtonHover",
+            "path": "Assets/UI/Hover/Hover_BackBTN.png"
+        },
+        {
+            "name": "ResumeGameButton",
+            "path": "Assets/UI/NormalState/ResumeGameBTN.png"
+        },
+        {
+            "name": "HP Bar.png",
+            "path": "Assets/Images/HP Bar.png"
+        },
+        {
+            "name": "Hover_TXTBTN_NextLvl.png",
+            "path": "Assets/Images/Hover_TXTBTN_NextLvl.png"
+        },
+        {
+            "name": "RetryButtonHover",
+            "path": "Assets/UI/Hover/Hover_RetryBTN.png"
+        },
+        {
+            "name": "Hover_TXTBTN_HowtoPlay.png",
+            "path": "Assets/Images/Hover_TXTBTN_HowtoPlay.png"
+        },
+        {
+            "name": "HP Bar Heart.png",
+            "path": "Assets/Images/HP Bar Heart.png"
+        },
+        {
+            "name": "HTP1_BG.png",
+            "path": "Assets/Images/HTP1_BG.png"
+        },
+        {
+            "name": "Button_ArrowBTN.png",
+            "path": "Assets/Images/Button_ArrowBTN.png"
+        },
+        {
+            "name": "QuitGameButton",
+            "path": "Assets/UI/NormalState/QuitGameBTN.png"
+        },
+        {
+            "name": "McIdleSprite",
+            "path": "Assets/Animation/MC_Idle.png"
+        },
+        {
+            "name": "TXTBTN_NextLvl.png",
+            "path": "Assets/Images/TXTBTN_NextLvl.png"
+        },
+        {
+            "name": "TXTBTN_QuitGame.png",
+            "path": "Assets/Images/TXTBTN_QuitGame.png"
+        },
+        {
+            "name": "PoisonIdleSprite",
+            "path": "Assets/Animation/PoisonIdleAnim.png"
+        },
+        {
+            "name": "TXTBTN_Resume.png",
+            "path": "Assets/Images/TXTBTN_Resume.png"
+        },
+        {
+            "name": "BG_HowtoPlay.png",
+            "path": "Assets/Images/BG_HowtoPlay.png"
+        },
+        {
+            "name": "SmokeParticles",
+            "path": "Assets/Images/SmokeParticles.png"
+        },
+        {
+            "name": "TXTBTN_Retry.png",
+            "path": "Assets/Images/TXTBTN_Retry.png"
+        },
+        {
+            "name": "Hover_BossBTN",
+            "path": "Assets/Images/Hover_BossBTN.png"
+        },
+        {
+            "name": "Hover_TXTBTN_Resume.png",
+            "path": "Assets/Images/Hover_TXTBTN_Resume.png"
+        },
+        {
+            "name": "HP_Fill.png",
+            "path": "Assets/Images/HP_Fill.png"
+        },
+        {
+            "name": "HP Bar Overlay.png",
+            "path": "Assets/Images/HP Bar Overlay.png"
+        },
+        {
+            "name": "PoisonDamagedIdleSprite",
+            "path": "Assets/Animation/Poison_Damaged_Idle.png"
+        },
+        {
+            "name": "Oil",
+            "path": "Assets/Images/Oil.png"
+        },
+        {
+            "name": "McDamagedSprite",
+            "path": "Assets/Animation/MC_Damaged.png"
+        },
+        {
+            "name": "PoisonDamagedSprite",
+            "path": "Assets/Animation/Poison_Damage.png"
+        },
+        {
+            "name": "dead",
+            "path": "Assets/Images/dead.png"
+        },
+        {
+            "name": "BG_PauseUI.png",
+            "path": "Assets/Images/BG_PauseUI.png"
+        },
+        {
+            "name": "BG_HowtoPlay2.png",
+            "path": "Assets/Images/BG_HowtoPlay2.png"
+        },
+        {
+            "name": "Button_BackBTN.png",
+            "path": "Assets/Images/Button_BackBTN.png"
+        },
+        {
+            "name": "Button_BacktoHomeBTN.png",
+            "path": "Assets/Images/Button_BacktoHomeBTN.png"
+        },
+        {
+            "name": "Bomb",
+            "path": "Assets/Images/Bomb.png"
+        },
+        {
+            "name": "Button_PlayBTN.png",
+            "path": "Assets/Images/Button_PlayBTN.png"
+        },
+        {
+            "name": "Button_ResumeGameBTN.png",
+            "path": "Assets/Images/Button_ResumeGameBTN.png"
+        },
+        {
+            "name": "Button_RetryBTN.png",
+            "path": "Assets/Images/Button_RetryBTN.png"
+        },
+        {
+            "name": "Hover_RetryBTN.png",
+            "path": "Assets/Images/Hover_RetryBTN.png"
+        },
+        {
+            "name": "Hover_ArrowBTN_R.png",
+            "path": "Assets/Images/Hover_ArrowBTN_R.png"
+        },
+        {
+            "name": "Hover_BackBTN.png",
+            "path": "Assets/Images/Hover_BackBTN.png"
+        },
+        {
+            "name": "SettingBG",
+            "path": "Assets/Images/SettingBG.png"
+        },
+        {
+            "name": "Hover_BacktoHomeBTN.png",
+            "path": "Assets/Images/Hover_BacktoHomeBTN.png"
+        },
+        {
+            "name": "Hover_CreditBTN.png",
+            "path": "Assets/Images/Hover_CreditBTN.png"
+        },
+        {
+            "name": "Hover_HowtoPlayBTN.png",
+            "path": "Assets/Images/Hover_HowtoPlayBTN.png"
+        },
+        {
+            "name": "Hover_PlayBTN.png",
+            "path": "Assets/Images/Hover_PlayBTN.png"
+        },
+        {
+            "name": "Guide_GameoverUI",
+            "path": "Assets/UI/OverlayGuide/Guide_GameoverUI.png"
+        },
+        {
+            "name": "Hover_QuitBTN.png",
+            "path": "Assets/Images/Hover_QuitBTN.png"
+        },
+        {
+            "name": "Boss",
+            "path": "Assets/UI/TxtBtns/Boss.png"
+        },
+        {
+            "name": "Hover_ResumeGameBTN.png",
+            "path": "Assets/Images/Hover_ResumeGameBTN.png"
+        },
+        {
+            "name": "Textbox_bg.png",
+            "path": "Assets/Images/Textbox_bg.png"
+        },
+        {
+            "name": "BG_SignProp.png",
+            "path": "Assets/Images/BG_SignProp.png"
+        },
+        {
+            "name": "ShadowMC_MCProp copy.png",
+            "path": "Assets/Images/ShadowMC_MCProp copy.png"
+        },
+        {
+            "name": "TitleScreen_Background.png",
+            "path": "Assets/Images/TitleScreen_Background.png"
+        },
+        {
+            "name": "TitleScreen_BossProp.png",
+            "path": "Assets/Images/TitleScreen_BossProp.png"
+        },
+        {
+            "name": "TitleScreen_CloudsProp.png",
+            "path": "Assets/Images/TitleScreen_CloudsProp.png"
+        },
+        {
+            "name": "TitleScreen_ForegroundProp.png",
+            "path": "Assets/Images/TitleScreen_ForegroundProp.png"
+        },
+        {
+            "name": "TitleScreen_Guide.png",
+            "path": "Assets/Images/TitleScreen_Guide.png"
+        },
+        {
+            "name": "BossDeath",
+            "path": "Assets/Animation/Boss_Death.png"
+        },
+        {
+            "name": "TitleScreen_MCProp.png",
+            "path": "Assets/Images/TitleScreen_MCProp.png"
+        },
+        {
+            "name": "TeamLogo",
+            "path": "Assets/Images/TeamLogo.png"
+        },
+        {
+            "name": "GameLogo",
+            "path": "Assets/Images/GameLogo.png"
+        },
+        {
+            "name": "Background",
+            "path": "Assets/Images/Background.png"
+        },
+        {
+            "name": "clock",
+            "path": "Assets/Images/clock.png"
+        },
+        {
+            "name": "BlackBackground",
+            "path": "Assets/Images/BlackBackground.png"
+        },
+        {
+            "name": "Hover_EasyBTN",
+            "path": "Assets/Images/Hover_EasyBTN.png"
+        },
+        {
+            "name": "DigipenLogo.png",
+            "path": "Assets/Images/DigipenLogo.png.png"
+        },
+        {
+            "name": "GameLogo.png",
+            "path": "Assets/Images/GameLogo.png.png"
+        },
+        {
+            "name": "TeamLogo.png",
+            "path": "Assets/Images/TeamLogo.png.png"
+        },
+        {
+            "name": "BlackBackground.png",
+            "path": "Assets/Images/BlackBackground.png.png"
+        },
+        {
+            "name": "clock and shade",
+            "path": "Assets/Images/clock and shade.png"
+        },
+        {
+            "name": "TutorialBoard",
+            "path": "Assets/Images/TutorialBoard.png"
+        },
+        {
+            "name": "BossIdle",
+            "path": "Assets/Animation/Boss_Idle.png"
+        },
+        {
+            "name": "BossIncomingAnimation",
+            "path": "Assets/Animation/BossIncoming.png"
+        },
+        {
+            "name": "Hover_How_to_Play",
+            "path": "Assets/UI/TxtBtns/Hover_TXTBTN_HowtoPlay.png"
+        },
+        {
+            "name": "Hover_Minus",
+            "path": "Assets/UI/TxtBtns/Hover_TXTBTN_Minus.png"
+        },
+        {
+            "name": "Minus",
+            "path": "Assets/UI/TxtBtns/TXTBTN_Minus.png"
+        },
+        {
+            "name": "SlowPrefab",
+            "path": "Assets/Images/SlowPrefab.png"
+        },
+        {
+            "name": "Hover_Plus",
+            "path": "Assets/UI/TxtBtns/Hover_TXTBTN_Plus.png"
+        },
+        {
+            "name": "Plus",
+            "path": "Assets/UI/TxtBtns/TXTBTN_Plus.png"
+        },
+        {
+            "name": "Hover_No",
+            "path": "Assets/UI/TxtBtns/Hover_TXTBTN_NoBTN.png"
+        },
+        {
+            "name": "No",
+            "path": "Assets/UI/TxtBtns/TXTBTN_NoBTN.png"
+        },
+        {
+            "name": "Hover_Yes",
+            "path": "Assets/UI/TxtBtns/Hover_TXTBTN_YesBTN.png"
+        },
+        {
+            "name": "Picture_2",
+            "path": "Assets/Images/Picture_2.png"
+        },
+        {
+            "name": "Yes",
+            "path": "Assets/UI/TxtBtns/TXTBTN_YesBTN.png"
+        },
+        {
+            "name": "Hover_Level_Select",
+            "path": "Assets/UI/TxtBtns/Hover_TXTBTN_LevelSelect.png"
+        },
+        {
+            "name": "Level_Select",
+            "path": "Assets/UI/TxtBtns/TXTBTN_LevelSelect.png"
+        },
+        {
+            "name": "EasyBTN",
+            "path": "Assets/Images/EasyBTN.png"
+        },
+        {
+            "name": "HardBTN",
+            "path": "Assets/Images/HardBTN.png"
+        },
+        {
+            "name": "TutorialBTN",
+            "path": "Assets/Images/TutorialBTN.png"
+        },
+        {
+            "name": "LevelSelectBG",
+            "path": "Assets/UI/LevelSelect/LevelSelectBG.png"
+        },
+        {
+            "name": "Easy",
+            "path": "Assets/Images/Easy.png"
+        },
+        {
+            "name": "LevelSelectBoard",
+            "path": "Assets/Images/LevelSelectBoard.png"
+        },
+        {
+            "name": "LevelSelectGuide",
+            "path": "Assets/UI/LevelSelect/LevelSelectGuide.png"
+        },
+        {
+            "name": "BigSteamAnim",
+            "path": "Assets/Animation/BigSteamAnim.png"
+        },
+        {
+            "name": "SignPost",
+            "path": "Assets/Images/SignPost.png"
+        },
+        {
+            "name": "Picture_1",
+            "path": "Assets/Images/Picture_1.png"
+        },
+        {
+            "name": "Picture_3",
+            "path": "Assets/Images/Picture_3.png"
+        },
+        {
+            "name": "Picture_4",
+            "path": "Assets/Images/Picture_4.png"
+        },
+        {
+            "name": "TXTBTN_Plus",
+            "path": "Assets/Images/TXTBTN_Plus.png"
+        },
+        {
+            "name": "Hover_TXTBTN_Minus",
+            "path": "Assets/Images/Hover_TXTBTN_Minus.png"
+        },
+        {
+            "name": "SettingUIGuide",
+            "path": "Assets/Images/SettingUIGuide.png"
+        },
+        {
+            "name": "BG_Confirmation",
+            "path": "Assets/UI/OverlayGuide/BG_Confirmation.png"
+        },
+        {
+            "name": "Guide_Confirmation",
+            "path": "Assets/UI/OverlayGuide/Guide_Confirmation.png"
+        },
+        {
+            "name": "BG_PauseUI",
+            "path": "Assets/UI/OverlayGuide/BG_PauseUI.png"
+        },
+        {
+            "name": "Guide_PauseUI",
+            "path": "Assets/UI/OverlayGuide/Guide_PauseUI.png"
+        },
+        {
+            "name": "Guide_CLearedUI",
+            "path": "Assets/UI/OverlayGuide/Guide_ClearedUI.png"
+        },
+        {
+            "name": "BG.png",
+            "path": "Assets/UI/HowToPlay/BG.png"
+        },
+        {
+            "name": "GamePauseHTP_Board",
+            "path": "Assets/UI/HowToPlay/GamePauseHTP_Board.png"
+        },
+        {
+            "name": "GamePauseHTP_Guide",
+            "path": "Assets/UI/HowToPlay/GamePauseHTP_Guide.png"
+        },
+        {
+            "name": "HTPGuide",
+            "path": "Assets/UI/HowToPlay/HTPGuide.png"
+        },
+        {
+            "name": "Tutorial_Sign1",
+            "path": "Assets/UI/HowToPlay/Tutorial_Sign1.png"
+        },
+        {
+            "name": "Tutorial_Sign2",
+            "path": "Assets/UI/HowToPlay/Tutorial_Sign2.png"
+        },
+        {
+            "name": "Tutorial_Sign3",
+            "path": "Assets/UI/HowToPlay/Tutorial_Sign3.png"
+        },
+        {
+            "name": "GameMockup",
+            "path": "Assets/Images/GameMockup.png"
+        },
+        {
+            "name": "Level_Scene_Final",
+            "path": "Assets/Images/Level1_Scene_Final.png"
+        },
+        {
+            "name": "SettingBGUpdated",
+            "path": "Assets/Images/SettingBGUpdated.png"
+        },
+        {
+            "name": "LowHealth",
+            "path": "Assets/Images/LowHealth.png"
+        },
+        {
+            "name": "CreditsBG",
+            "path": "Assets/Images/CreditsBG.png"
+        },
+        {
+            "name": "CreditOverlayContents",
+            "path": "Assets/Images/CreditOverlayContents.png"
+        },
+        {
+            "name": "SmallSteamAnim",
+            "path": "Assets/Animation/SmallSteamAnim.png"
+        },
+        {
+            "name": "SmokeIdle",
+            "path": "Assets/Animation/Smoke_Idle.png"
+        },
+        {
+            "name": "SmokeDie",
+            "path": "Assets/Animation/Smoke_Die.png"
+        },
+        {
+            "name": "BossBullet",
+            "path": "Assets/Images/Boss_Bullet.png"
+        },
+        {
+            "name": "BossDamage",
+            "path": "Assets/Animation/Boss_Damage.png"
+        },
+        {
+            "name": "BossIncomingOverlay",
+            "path": "Assets/Images/Overlay_BossWarning.png"
+        },
+        {
+            "name": "TXTBTN_Minus",
+            "path": "Assets/Images/TXTBTN_Minus.png"
+        },
+        {
+            "name": "Hover_TXTBTN_Plus",
+            "path": "Assets/Images/Hover_TXTBTN_Plus.png"
+        },
+        {
+            "name": "Button_SettingBTN",
+            "path": "Assets/Images/Button_SettingBTN.png"
+        },
+        {
+            "name": "Hover_SettingBTN",
+            "path": "Assets/Images/Hover_SettingBTN.png"
+        },
+        {
+            "name": "ClockIndicator",
+            "path": "Assets/Images/ClockIndicator.png"
+        },
+        {
+            "name": "HPIndicator",
+            "path": "Assets/Images/HPIndicator.png"
+        },
+        {
+            "name": "BossBG",
+            "path": "Assets/Images/BossBG.png"
+        },
+        {
+            "name": "BossFill",
+            "path": "Assets/Images/BossFill.png"
+        },
+        {
+            "name": "BG_ClearedUI",
+            "path": "Assets/Images/BG_ClearedUI.png"
+        },
+        {
+            "name": "BG_SignProp",
+            "path": "Assets/Images/BG_SignProp.png"
+        },
+        {
+            "name": "Hover_HardBTN",
+            "path": "Assets/Images/Hover_HardBTN.png"
+        },
+        {
+            "name": "Hover_TutorialBTN",
+            "path": "Assets/Images/Hover_TutorialBTN.png"
+        },
+        {
+            "name": "Hard",
+            "path": "Assets/Images/Hard.png"
+        },
+        {
+            "name": "OtherSceneBG",
+            "path": "Assets/Images/OtherSceneBG.png"
+        },
+        {
+            "name": "HTPBoard_1",
+            "path": "Assets/Images/HTPBoard_1.png"
+        },
+        {
+            "name": "HTPBoard_2",
+            "path": "Assets/Images/HTPBoard_2.png"
+        },
+        {
+            "name": "TitleScrnBossAnim",
+            "path": "Assets/Animation/TitleScrnBossAnim.png"
+        },
+        {
+            "name": "TitleScrnMCAnim",
+            "path": "Assets/Animation/TitleScrnMCAnim.png"
+        },
+        {
+            "name": "GamePauseHTPBoard",
+            "path": "Assets/Animation/GamePauseHTPBoard.png"
+        },
+        {
+            "name": "BossMinionIdle",
+            "path": "Assets/Animation/Minion_Idle.png"
+        },
+        {
+            "name": "BigSteamAnim",
+            "path": "Assets/Animation/BigSteamAnim.png"
+        },
+        {
+            "name": "SmallSteamAnim",
+            "path": "Assets/Animation/SmallSteamAnim.png"
+        }
+    ]
+}

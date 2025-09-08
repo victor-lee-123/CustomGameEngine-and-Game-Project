@@ -1,0 +1,44 @@
+{
+    "entities": [
+        {
+            "type": "Reset function using timeline object",
+            "components": {
+                "TransformComponent": {
+                    "x": 950.0,
+                    "y": 500.9748229980469,
+                    "scaleX": 5000.0,
+                    "scaleY": 5000.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleBackground",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.0,
+                    "TransitionDelay": 1.0,
+                    "TransitionOutDelay": 1.0,
+                    "TransitionInFunctionName": "RetryFunctions",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "MainMenuTransition",
+                    "startPosition": 2800.0,
+                    "endPosition": 700.0
+                }
+            }
+        }
+    ]
+}

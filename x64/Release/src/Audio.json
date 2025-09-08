@@ -1,0 +1,16 @@
+{
+  "musicAssets": [
+    {
+      "customName": "winloop",
+      "filePath": "assets/audio/bgm/winning_loop.wav",
+      "mode": "loop",
+      "soundType": "background"
+    },
+    {
+      "customName": "piano",
+      "filePath": "assets/audio/bgm/piano.wav",
+      "mode": "oneshot",
+      "soundType": "effect"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+    "entities": [
+        {
+            "type": "Background",
+            "components": {
+                "TransformComponent": {
+                    "x": 960,
+                    "y": 540,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BlackBackground.png",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        },
+        {
+            "type": "DigipenLogo",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 540.0,
+                    "scaleX": 800.0,
+                    "scaleY": 348.33,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "DigipenLogo.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 2.5,
+                    "TransitionInFunctionName": "FadeIn",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "DigipenLogoTimeline",
+                    "startPosition": 0.0,
+                    "endPosition": 500.0
+                }
+            }
+        },
+        {
+            "type": "TeamLogo",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 550.0,
+                    "scaleX": 800.0,
+                    "scaleY": 400.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TeamLogo.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 2
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 3.5,
+                    "TransitionInDelay": 6.0,
+                    "TransitionOutDelay": 1.5,
+                    "TransitionInFunctionName": "FadeIn",
+                    "TransitionOutFunctionName": "FadeOutTransitionToMenu",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "TeamLogoTimeline",
+                    "startPosition": 0.0,
+                    "endPosition": 500.0
+                }
+            }
+        }
+    ]
+}

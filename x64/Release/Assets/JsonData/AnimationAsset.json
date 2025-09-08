@@ -1,0 +1,137 @@
+{
+  "animations": [
+    {
+      "name": "McDieSprite",
+      "rows": 2,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "McIdleSprite",
+      "rows": 2,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "dead",
+      "rows": 1,
+      "cols": 1,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "McDamagedSprite",
+      "rows": 2,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "PoisonIdleSprite",
+      "rows": 2,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "PoisonDamagedIdleSprite",
+      "rows": 2,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "PoisonDamagedSprite",
+      "rows": 2,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "BossIncomingAnimation",
+      "rows": 3,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "BossDeath",
+      "rows": 3,
+      "cols": 5,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "BossDamage",
+      "rows": 2,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "BossIdle",
+      "rows": 2,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "SmokeIdle",
+      "rows": 2,
+      "cols": 7,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "SmokeDie",
+      "rows": 1,
+      "cols": 7,
+      "animationSpeed": 8.0
+    },
+    
+    {
+      "name": "Picture_1",
+      "rows": 4,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "Picture_2",
+      "rows": 4,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "Picture_3",
+      "rows": 4,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },    
+    {
+      "name": "Picture_4",
+      "rows": 4,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "TitleScrnBossAnim",
+      "rows": 3,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "TitleScrnMCAnim",
+      "rows": 3,
+      "cols": 4,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "BossMinionIdle",
+      "rows": 2,
+      "cols": 6,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "BigSteamAnim",
+      "rows": 3,
+      "cols": 5,
+      "animationSpeed": 8.0
+    },
+    {
+      "name": "SmallSteamAnim",
+      "rows": 2,
+      "cols": 5,
+      "animationSpeed": 8.0
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+    "musicAssets": [
+        {
+            "customName": "Shoot_Wrong",
+            "filePath": "Assets/Audio/soundeffect/Shoot_Wrong.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Funkalicious",
+            "filePath": "Assets/Audio/bgm/Funkalicious.wav",
+            "mode": "loop",
+            "soundType": "background"
+        },
+        {
+            "customName": "selectbutton",
+            "filePath": "Assets/Audio/soundeffect/selectbutton.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "previousbutton",
+            "filePath": "./Assets/Audio/soundeffect/previousbutton.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "buttonclick",
+            "filePath": "Assets/Audio/soundeffect/buttonclick.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Type4",
+            "filePath": "Assets/Audio/soundeffect/Type4.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Ding4",
+            "filePath": "Assets/Audio/soundeffect/Ding4.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Music_Boss_Loop",
+            "filePath": "Assets/Audio/bgm/Music_Boss_Loop.wav",
+            "mode": "loop",
+            "soundType": "background"
+        },
+        {
+            "customName": "Music_Level_Loop",
+            "filePath": "Assets/Audio/bgm/Music_Level_Loop.wav",
+            "mode": "loop",
+            "soundType": "background"
+        },
+        {
+            "customName": "Ding5",
+            "filePath": "Assets/Audio/soundeffect/Ding5.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Skull_Death",
+            "filePath": "Assets/Audio/soundeffect/Skull_Death.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Shoot_Correct",
+            "filePath": "Assets/Audio/soundeffect/Shoot_Correct.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "slimedamaged_02",
+            "filePath": "Assets/Audio/soundeffect/slimedamaged_02.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "slimedamaged_01",
+            "filePath": "Assets/Audio/soundeffect/slimedamaged_01.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "playerwalk_01",
+            "filePath": "Assets/Audio/soundeffect/playerwalk_01.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "slimedeath_02",
+            "filePath": "Assets/Audio/soundeffect/slimedeath_02.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "slimedeath_01",
+            "filePath": "Assets/Audio/soundeffect/slimedeath_01.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Duskwalkin",
+            "filePath": "Assets/Audio/bgm/Duskwalkin.wav",
+            "mode": "loop",
+            "soundType": "background"
+        },
+        {
+            "customName": "Shoot_Wrong2",
+            "filePath": "Assets/Audio/soundeffect/Shoot_Wrong2.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "playerwalk_02",
+            "filePath": "Assets/Audio/soundeffect/playerwalk_02.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "BossDie",
+            "filePath": "Assets/Audio/soundeffect/BossDie.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "SmokeDie",
+            "filePath": "Assets/Audio/soundeffect/SmokeDie.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "BGM_OLYMPIC",
+            "filePath": "Assets/Audio/bgm/BGM_OLYMPIC.wav",
+            "mode": "loop",
+            "soundType": "background"
+        },
+        {
+            "customName": "Ding2",
+            "filePath": "Assets/Audio/soundeffect/Ding2.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "PoisonDie",
+            "filePath": "Assets/Audio/soundeffect/PoisonDie.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Type5",
+            "filePath": "Assets/Audio/soundeffect/Type5.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Type1",
+            "filePath": "Assets/Audio/soundeffect/Type1.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Story BGM_Linear",
+            "filePath": "Assets/Audio/soundeffect/Story BGM_Linear.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Boss Warning Animation_Linear",
+            "filePath": "Assets/Audio/bgm/Boss Warning Animation_Linear.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Combined_Music_Tutorial",
+            "filePath": "Assets/Audio/bgm/Combined_Music_Tutorial.wav",
+            "mode": "loop",
+            "soundType": "background"
+        },
+        {
+            "customName": "TimeGoBack",
+            "filePath": "Assets/Audio/soundeffect/TimeGoBack.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Type3",
+            "filePath": "Assets/Audio/soundeffect/Type3.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "TimeReturn",
+            "filePath": "Assets/Audio/soundeffect/TimeReturn.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Type6",
+            "filePath": "Assets/Audio/soundeffect/Type6.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Type2",
+            "filePath": "Assets/Audio/soundeffect/Type2.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "BossShoot",
+            "filePath": "Assets/Audio/soundeffect/BossShoot.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "BossDamage",
+            "filePath": "Assets/Audio/soundeffect/BossDamage.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Boss_Hit",
+            "filePath": "Assets/Audio/soundeffect/Boss_Hit.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "PlayerDamage",
+            "filePath": "Assets/Audio/soundeffect/PlayerDamage.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "TimeSlow",
+            "filePath": "Assets/Audio/soundeffect/TimeSlow.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Typing_02",
+            "filePath": "Assets/Audio/soundeffect/Typing_02.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Typing_01",
+            "filePath": "Assets/Audio/soundeffect/Typing_01.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Ding3",
+            "filePath": "Assets/Audio/soundeffect/Ding3.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Ding1",
+            "filePath": "Assets/Audio/soundeffect/Ding1.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "Ding6",
+            "filePath": "Assets/Audio/soundeffect/Ding6.wav",
+            "mode": "oneshot",
+            "soundType": "effect"
+        },
+        {
+            "customName": "AdventureBGM",
+            "filePath": "Assets/Audio/bgm/AdventureBGM.wav",
+            "mode": "loop",
+            "soundType": "background"
+        }
+    ]
+}

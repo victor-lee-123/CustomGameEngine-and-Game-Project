@@ -1,0 +1,58 @@
+{
+    "entities": [
+        {
+            "type": "PlayerBar",
+            "components": {
+                "TransformComponent": {
+                    "x": 263.435248046875,
+                    "y": 965.92984567871094,
+                    "scaleX": 512.0,
+                    "scaleY": 512.0,
+                    "rotation": 0.0,
+                    "tag": "PlayerBar"
+                },
+                "RenderComponent": {
+                    "textureID": "Hover_TXTBTN_TitleScreen.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "UIBarComponent": {
+                    "backingTextureID": "HP Bar BG.png",
+                    "fillTextureID": "HP_Fill.png",
+                    "fillPercentage": 1.0,
+                    "offsetX": 0.0,
+                    "offsetY": 0.0,
+                    "scaleX": 512.0,
+                    "scaleY": 512.0,
+                    "scaleY": 512.0,
+                    "scaleY": 512.0,
+                    "fillOffsetX": -140.0,
+                    "fillOffsetY": 6.0,
+                    "fillSizeX": 340.0,
+                    "fillSizeY": 30.0,
+                    "fillColor": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fillAlpha": 1.0,
+                    "bgColor": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "bgAlpha": 1.0
+                }
+            }
+        }
+    ]
+}

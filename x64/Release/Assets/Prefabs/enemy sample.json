@@ -1,0 +1,79 @@
+{
+    "entities": [
+        {
+            "type": "Enemy_1",
+            "components": {
+              "TransformComponent": {
+                "x":-100.0,
+                "y": 0.0,
+                "scaleX": 100.0,
+                "scaleY": 100.0,
+                "rotation": 0.0
+              },
+              "RenderComponent": {
+                "textureID": "SmokeIdle",
+                "color": [1.0, 1.0, 1.0],  
+                "alpha": 1.0,
+                "renderType": "Sprite"
+              },
+              "LayerComponent": {
+                "LayerID": 1,
+                "SortID": 1
+              },
+              "MovementComponent": {
+                "x": 0.0,
+                "y": 0.0,
+                "baseX": 100.0,
+                "baseY": 100.0
+              },
+              "CollisionComponent": {
+                "type": "Enemy",
+                "collided": false,
+                "radius": 50.0,
+                "collisionScaleX":50,
+                "collisionScaleY":50
+              },
+              "EnemyComponent": {
+                  "type": "Smoke",
+                  "health": 10.0,
+                  "UpdateFunctionName": "ChasePlayer",
+                  "spawned": false,
+                  "spawnRate": 0.0,
+                  "spawnTimer": 0.0
+              },
+      
+              "TextComponent": {
+                "text": "T",
+                "fontSize": 1,
+           "color": [1.0, 1.0, 1.0],
+                "fontName": "Exo2-bold",
+                "offset": [-25.0, 70.0]
+              },
+                
+              "AnimationComponent": {
+                "animationSpeed": 8.0,
+                "rows": 2,
+                "cols": 6
+              },
+              "BulletComponent": {
+                "targetId": 0
+              },
+              "ParticleComponent": {
+              "positionX": 0.0,
+              "positionY": 0.0,
+              "velocityX": 0.1,
+              "velocityY": 0.1,
+              "colorR": 1.0,
+              "colorG": 1.0,
+              "colorB": 1.0,
+              "size": 50.0,
+              "life": 2.0,
+              "active": true,
+              "emissionRate": 50.0,
+              "textureName": "SmokeParticles",
+              "shape": "RANDOM"
+            }
+            }
+          }
+    ]
+}

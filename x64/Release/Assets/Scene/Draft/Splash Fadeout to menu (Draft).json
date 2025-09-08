@@ -1,0 +1,642 @@
+{
+    "entities": [
+        {
+            "type": "Cover",
+            "components": {
+                "TransformComponent": {
+                    "x": 2950.0,
+                    "y": 510.0,
+                    "scaleX": 2000.0,
+                    "scaleY": 1100.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleBackground.png",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.0,
+                    "TransitionInDelay": 2.0,
+                    "TransitionOutDelay": 5.0,
+                    "TransitionInFunctionName": "SlideIn",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": false,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "MainMenuTransition",
+                    "startPosition": 2800.0,
+                    "endPosition": 950.0
+                }
+            }
+        },
+        {
+            "type": "TitleBackground",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 515.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 360.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_Guide.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 5
+                }
+            }
+        },
+        {
+            "type": "PlayButton",
+            "components": {
+                "TransformComponent": {
+                    "x": 492.0,
+                    "y": 517.0,
+                    "scaleX": 194.0,
+                    "scaleY": 99.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "Button_PlayBTN.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 5
+                },
+                "ButtonComponent": {
+                    "label": "Play",
+                    "idleTextureID": "Button_PlayBTN.png",
+                    "hoverTextureID": "Hover_PlayBTN.png",
+                    "pressedTextureID": "fire.png",
+                    "UpdateFunctionName": "StartGame",
+                    "onClick": "StartGame",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "HowToPlayButton",
+            "components": {
+                "TransformComponent": {
+                    "x": 460.0,
+                    "y": 635.0,
+                    "scaleX": 427.0,
+                    "scaleY": 96.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "Button_HowtoPlayBTN.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 6
+                },
+                "ButtonComponent": {
+                    "label": "HowToPlay",
+                    "idleTextureID": "Button_HowtoPlayBTN.png",
+                    "hoverTextureID": "Hover_HowtoPlayBTN.png",
+                    "pressedTextureID": "fire.png",
+                    "UpdateFunctionName": "LoadHowToPlay",
+                    "onClick": "LoadHowToPlay",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "CreditButton",
+            "components": {
+                "TransformComponent": {
+                    "x": 490.0,
+                    "y": 755.0,
+                    "scaleX": 282.0,
+                    "scaleY": 99.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "Button_CreditBTN.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 7
+                },
+                "ButtonComponent": {
+                    "label": "Credits",
+                    "idleTextureID": "Button_CreditBTN.png",
+                    "hoverTextureID": "Hover_CreditBTN.png",
+                    "pressedTextureID": "fire.png",
+                    "UpdateFunctionName": "SettingsMenuEvent",
+                    "onClick": "SettingsMenuEvent",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "QuitButton",
+            "components": {
+                "TransformComponent": {
+                    "x": 480.0,
+                    "y": 880.0,
+                    "scaleX": 277.0,
+                    "scaleY": 85.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "Button_QuitBTN.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 5
+                },
+                "ButtonComponent": {
+                    "label": "Quit",
+                    "idleTextureID": "Button_QuitBTN.png",
+                    "hoverTextureID": "Hover_QuitBTN.png",
+                    "pressedTextureID": "fire.png",
+                    "UpdateFunctionName": "ExitGame",
+                    "onClick": "ExitGame",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Sky",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 515.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_Background.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Background",
+            "components": {
+                "TransformComponent": {
+                    "x": 1165.0,
+                    "y": 810.0,
+                    "scaleX": 2049.0,
+                    "scaleY": 1419.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_BackgroundProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Clouds",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 290.0,
+                    "scaleX": 2049.0,
+                    "scaleY": 1418.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_CloudsProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.7630000114440918,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Sign",
+            "components": {
+                "TransformComponent": {
+                    "x": 483.0,
+                    "y": 650.0,
+                    "scaleX": 1025.0,
+                    "scaleY": 1024.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "BG_SignProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                }
+            }
+        },
+        {
+            "type": "MC",
+            "components": {
+                "TransformComponent": {
+                    "x": 1635.0,
+                    "y": 710.0,
+                    "scaleX": 2049.0,
+                    "scaleY": 2049.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_MCProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 5
+                }
+            }
+        },
+        {
+            "type": "Foreground",
+            "components": {
+                "TransformComponent": {
+                    "x": 801.0,
+                    "y": 766.0,
+                    "scaleX": 2049.0,
+                    "scaleY": 1419.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_ForegroundProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Enemies",
+            "components": {
+                "TransformComponent": {
+                    "x": 1290.0,
+                    "y": 260.0,
+                    "scaleX": 1025.0,
+                    "scaleY": 1025.0,
+                    "rotation": 0.0,
+                    "tag": "Default"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_BossProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Background2",
+            "components": {
+                "TransformComponent": {
+                    "x": 959.9999389648438,
+                    "y": 557.3355102539063,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BlackBackground.png",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 3
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 3.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 11.0,
+                    "TransitionInFunctionName": "",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": true,
+                    "IsTransitioningIn": false,
+                    "TimelineTag": "",
+                    "startPosition": 0.0,
+                    "endPosition": 0.0
+                }
+            }
+        },
+        {
+            "type": "DigipenLogo",
+            "components": {
+                "TransformComponent": {
+                    "x": 900.0,
+                    "y": 600.0,
+                    "scaleX": 800.0,
+                    "scaleY": 450.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "DigipenLogo.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 4
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 2.5,
+                    "TransitionInFunctionName": "FadeIn",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "DigipenLogoTimeline",
+                    "startPosition": 0.0,
+                    "endPosition": 500.0
+                }
+            }
+        },
+        {
+            "type": "TeamLogo",
+            "components": {
+                "TransformComponent": {
+                    "x": 900.0,
+                    "y": 550.0,
+                    "scaleX": 800.0,
+                    "scaleY": 450.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TeamLogo.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 4
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 3.5,
+                    "TransitionInDelay": 6.0,
+                    "TransitionOutDelay": 1.5,
+                    "TransitionInFunctionName": "FadeIn",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "TeamLogoTimeline",
+                    "startPosition": 0.0,
+                    "endPosition": 500.0
+                }
+            }
+        }
+    ]
+}

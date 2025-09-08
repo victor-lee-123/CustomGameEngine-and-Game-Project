@@ -1,0 +1,471 @@
+{
+    "entities": [
+        {
+            "type": "Black 2",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 540.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 360.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "SettingBG",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 1.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "Exo2-bold",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        },
+        {
+        "type": "BigSteam",
+        "components": {
+          "TransformComponent": {
+              "x": 100.0,
+              "y": 430.0,
+              "scaleX": 174.0,
+              "scaleY": 234.0,
+              "rotation": 0.0
+          },
+            "RenderComponent": {
+                "textureID": "BigSteamAnim",
+                "color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "alpha": 1.00,
+                "renderType": "Sprite"
+            },
+            "AnimationComponent": {
+              "animationSpeed": 8.0,
+              "rows": 3,
+              "cols": 5
+            },
+            "LayerComponent": {
+                "LayerID": 3,
+                "SortID": 3
+            }  
+          }
+        },
+
+        {
+          "type": "BigSteam",
+          "components": {
+            "TransformComponent": {
+                "x": 900.0,
+                "y": 700.0,
+                "scaleX": 174.0,
+                "scaleY": 234.0,
+                "rotation": 0.0
+            },
+              "RenderComponent": {
+                  "textureID": "BigSteamAnim",
+                  "color": [
+                      1.0,
+                      1.0,
+                      1.0
+                  ],
+                  "alpha": 1.00,
+                  "renderType": "Sprite"
+              },
+              "AnimationComponent": {
+                "animationSpeed": 8.0,
+                "rows": 3,
+                "cols": 5
+              },
+              "LayerComponent": {
+                  "LayerID": 3,
+                  "SortID": 3
+              }  
+            }
+          },
+          {
+            "type": "BigSteam",
+            "components": {
+              "TransformComponent": {
+                  "x": 1740.0,
+                  "y": 420.0,
+                  "scaleX": 174.0,
+                  "scaleY": 234.0,
+                  "rotation": 0.0
+              },
+                "RenderComponent": {
+                    "textureID": "BigSteamAnim",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.00,
+                    "renderType": "Sprite"
+                },
+                "AnimationComponent": {
+                  "animationSpeed": 8.0,
+                  "rows": 3,
+                  "cols": 5
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                }  
+              }
+            },
+            {
+            "type": "BigSteam",
+            "components": {
+              "TransformComponent": {
+                  "x": 1530.0,
+                  "y": 660.0,
+                  "scaleX": 174.0,
+                  "scaleY": 234.0,
+                  "rotation": 0.0
+              },
+                "RenderComponent": {
+                    "textureID": "BigSteamAnim",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.00,
+                    "renderType": "Sprite"
+                },
+                "AnimationComponent": {
+                  "animationSpeed": 8.0,
+                  "rows": 3,
+                  "cols": 5
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                }  
+              }
+            },
+        {
+            "type": "Back To menu",
+            "components": {
+                "TransformComponent": {
+                    "x": 115.8933334350586,
+                    "y": 124.37093353271484,
+                    "scaleX": 160.0,
+                    "scaleY": 80.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "Button_ArrowBTN_L.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 0.800000011920929,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "Exo2-bold",
+                    "offset": [
+                        -100.0,
+                        10.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "Button_ArrowBTN_L.png",
+                    "hoverTextureID": "Button_ArrowBTN_L.png",
+                    "pressedTextureID": "Button_ArrowBTN_L.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "1st +",
+            "components": {
+                "TransformComponent": {
+                    "x": 1108.37841796875,
+                    "y": 562.0,
+                    "scaleX": 71.0,
+                    "scaleY": 61.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Plus",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "elo",
+                    "idleTextureID": "TXTBTN_Plus",
+                    "hoverTextureID": "TXTBTN_Plus",
+                    "pressedTextureID": "TXTBTN_Plus",
+                    "UpdateFunctionName": "IncreaseMusicVolume",
+                    "onClick": "IncreaseMusicVolume",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "1st -",
+            "components": {
+                "TransformComponent": {
+                    "x": 881.896728515625,
+                    "y": 562.3218994140625,
+                    "scaleX": 71.0,
+                    "scaleY": 61.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "Hover_TXTBTN_Minus",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Minus",
+                    "hoverTextureID": "Hover_TXTBTN_Minus",
+                    "pressedTextureID": "Hover_TXTBTN_Minus",
+                    "UpdateFunctionName": "DecreaseMusicVolume",
+                    "onClick": "DecreaseMusicVolume",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "2nd +",
+            "components": {
+                "TransformComponent": {
+                    "x": 1108.0,
+                    "y": 630.0,
+                    "scaleX": 71.0,
+                    "scaleY": 61.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Plus",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Plus",
+                    "hoverTextureID": "TXTBTN_Plus",
+                    "pressedTextureID": "TXTBTN_Plus",
+                    "UpdateFunctionName": "IncreaseSoundVolume",
+                    "onClick": "IncreaseSoundVolume",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "2nd -",
+            "components": {
+                "TransformComponent": {
+                    "x": 881.89697265625,
+                    "y": 630.0,
+                    "scaleX": 71.0,
+                    "scaleY": 61.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "Hover_TXTBTN_Minus",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Minus",
+                    "hoverTextureID": "Hover_TXTBTN_Minus",
+                    "pressedTextureID": "Hover_TXTBTN_Minus",
+                    "UpdateFunctionName": "DecreaseSoundVolume",
+                    "onClick": "DecreaseSoundVolume",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Text 1",
+            "components": {
+                "TransformComponent": {
+                    "x": 946.0,
+                    "y": 580.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "MusicVolume"
+                },
+                "RenderComponent": {
+                    "textureID": "",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "100%",
+                    "fontSize": 1.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        },
+        {
+            "type": "Text 2",
+            "components": {
+                "TransformComponent": {
+                    "x": 946.605712890625,
+                    "y": 644.159912109375,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "SoundVolume"
+                },
+                "RenderComponent": {
+                    "textureID": "",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "100%",
+                    "fontSize": 1.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        }
+    ]
+}

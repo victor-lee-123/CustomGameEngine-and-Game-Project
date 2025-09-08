@@ -1,0 +1,80 @@
+{
+    "entities": [
+      {
+        "type": "Boss_1",
+        "components": {
+          "TransformComponent": {
+            "x":1000.0,
+            "y":150.0,
+            "scaleX": 300.0,
+            "scaleY": 300.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "BossIdle",
+            "color": [1.0, 1.0, 1.0],  
+            "alpha": 1.0,
+            "renderType": "Sprite"
+          },
+          "LayerComponent": {
+            "LayerID": 1,
+            "SortID": 1
+          },
+          "MovementComponent": {
+            "x": 0.0,
+            "y": 0.0,
+            "baseX": 0.0,
+            "baseY": 0.0
+          },
+          "CollisionComponent": {
+            "type": "Enemy",
+            "collided": false,
+            "radius": 50.0,
+            "collisionScaleX":200,
+            "collisionScaleY":200
+            
+          },
+          "EnemyComponent": {
+              "type": "Boss",
+              "health": 8000.0,
+              "UpdateFunctionName": "Attack",
+              "spawned": false,
+              "spawnRate": 1.0,
+              "spawnTimer": 0.0
+          },
+    
+          "TextComponent": {
+            "text": "Te",
+            "fontSize": 1,
+       "color": [0.0, 0.0, 0.0],
+            "fontName": "Exo2-bold",
+            "offset": [-15.0, 100.0]
+          },
+            
+          "AnimationComponent": {
+            "animationSpeed": 8.0,
+            "rows": 2,
+            "cols": 6
+          },
+          "BulletComponent": {
+            "targetId": 0
+          },
+          "ParticleComponent": {
+          "positionX": 0.0,
+          "positionY": 0.0,
+          "velocityX": 0.1,
+          "velocityY": 0.1,
+          "colorR": 1.0,
+          "colorG": 1.0,
+          "colorB": 1.0,
+          "size": 50.0,
+          "life": 2.0,
+          "active": true,
+          "emissionRate": 50.0,
+          "textureName": "SmokeParticles",
+          "shape": "RANDOM"
+        }
+        }
+      }
+    ]
+}

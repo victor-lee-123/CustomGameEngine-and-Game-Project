@@ -1,0 +1,236 @@
+{
+    "entities": [
+        {
+            "type": "Black Back",
+            "components": {
+                "TransformComponent": {
+                    "x": 1028.7655029296875,
+                    "y": 396.48980712890625,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 360.0,
+                    "tag": "Entity_15"
+                },
+                "RenderComponent": {
+                    "textureID": "HardBTN",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        },
+        {
+            "type": "Back To menu",
+            "components": {
+                "TransformComponent": {
+                    "x": 172.0,
+                    "y": 490.0,
+                    "scaleX": 284.0,
+                    "scaleY": 130.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_16"
+                },
+                "RenderComponent": {
+                    "textureID": "Button_BackBTN.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "Button_BackBTN.png",
+                    "hoverTextureID": "Hover_BackBTN.png",
+                    "pressedTextureID": "Hover_BackBTN.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "1st +",
+            "components": {
+                "TransformComponent": {
+                    "x": 1365.861083984375,
+                    "y": 520.26708984375,
+                    "scaleX": 284.0,
+                    "scaleY": 130.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_17"
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Plus",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Plus.png",
+                    "hoverTextureID": "Hover_TXTBTN_Plus.png",
+                    "pressedTextureID": "Hover_TXTBTN_Plus.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "1st -",
+            "components": {
+                "TransformComponent": {
+                    "x": 172.0,
+                    "y": 490.0,
+                    "scaleX": 284.0,
+                    "scaleY": 130.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_18"
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Minus.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Minus.png",
+                    "hoverTextureID": "Hover_TXTBTN_Minus.png",
+                    "pressedTextureID": "Hover_TXTBTN_Minus.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "2nd +",
+            "components": {
+                "TransformComponent": {
+                    "x": 172.0,
+                    "y": 490.0,
+                    "scaleX": 284.0,
+                    "scaleY": 130.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_19"
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Plus.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Plus.png",
+                    "hoverTextureID": "Hover_TXTBTN_Plus.png",
+                    "pressedTextureID": "Hover_TXTBTN_Plus.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "2nd -",
+            "components": {
+                "TransformComponent": {
+                    "x": 172.0,
+                    "y": 490.0,
+                    "scaleX": 284.0,
+                    "scaleY": 130.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_20"
+                },
+                "RenderComponent": {
+                    "textureID": "Hover_TXTBTN_Minus.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TXTBTN_Minus.png",
+                    "hoverTextureID": "Hover_TXTBTN_Minus.png",
+                    "pressedTextureID": "Hover_TXTBTN_Minus.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        }
+    ]
+}

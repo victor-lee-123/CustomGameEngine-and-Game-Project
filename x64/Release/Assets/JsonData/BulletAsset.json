@@ -1,0 +1,34 @@
+{
+  "Bullet": {
+    "scale": {
+      "x": 50,
+      "y": 50
+    },
+    "textureID": "Bullet",
+    "color": [1.0, 1.0, 1.0],
+    "alpha": 1.0,
+    "movement": {
+      "baseVelocity": {
+        "x": 500,
+        "y": 500
+      }
+    },
+    "text": {
+      "fontName": "Salmon"
+    },
+    "particle": {
+      "textureName": "fire",
+      "life": 1.0,
+      "size": 50,
+      "color": [1.0, 1.0, 1.0],
+      "emitDelay": 0.25,
+      "emissionRate": 0.05
+    },
+    "damageMultiplier": 20,
+    "CollisionComponent": {
+        "collisionScaleX":30,
+        "collisionScaleY":30
+
+    }
+  }
+}
