@@ -3,7 +3,6 @@ Custom Game Engine Project created with a group of developers and UI/UX engineer
 ===================================
 
 # Unnamed Engine created by UnnamedStudio
-
 Unnamed Studio Engine is an engine specialized to various games, with an approach to scalability via utilizing ECS and components and thus allowing a modular and flexible developmental scaling. 
 The studio comprises of a eight Year 2 computer science and UI/UX students from Singapore Institure of Technology.
 
@@ -16,6 +15,8 @@ Engine features:
 - assets manager
 - properties page (translation, rotation, scaling, textures, text colors, fonts etc.)
 - drag-and-drop items
+- real time gameplay in viewport
+- on-screen entity transformation
 
 # TO RUN THE ENGINE
 Simply unzip the file, and run x64/Release/Engine.exe
@@ -26,4 +27,4 @@ To exit out of fullscreen, press "-" button on keyboard OR Alt-Tab to close it.
 
 # OTHERS
 lib files contain all the library and other tools we used for the project.
-Source codes only contain hte codes that I have worked on. (feel free to ask for the entire repo with entire solution and full source code).
+Source codes only contain the codes that I have worked on. (feel free to ask for the entire repo with entire solution and full source code).
