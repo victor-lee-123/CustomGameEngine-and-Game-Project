@@ -1,8 +1,8 @@
-# CustomGameEngine-and-Game-Project
+# CustomGameEngine-and-Game-Project 👾
 Custom Game Engine Project created with a group of developers and UI/UX engineers.
 ===================================
 
-# Unnamed Engine created by UnnamedStudio
+# ✨ Unnamed Engine created by UnnamedStudio
 Unnamed Studio Engine is an engine specialized to various games, with an approach to scalability via utilizing ECS and components and thus allowing a modular and flexible developmental scaling. 
 The studio comprises of a eight Year 2 computer science and UI/UX students from Singapore Institure of Technology (Joint degree with Digipen Institute of Technology).
 
@@ -18,13 +18,13 @@ Engine features:
 - real time gameplay in viewport
 - on-screen entity transformation
 
-# TO RUN THE ENGINE
+# 👟 TO RUN THE ENGINE
 Simply unzip the file, and run x64/Release/Engine.exe
 
-# IMPORTANT NOTES
+# ⚠️ IMPORTANT NOTES
 The game engine runs as a pause state and there will be no running entities shown on the viewport. To run, simply click on "Play" on the top panel. "Stop" button deletes all entities on the viewport.
 To exit out of fullscreen, press "-" button on keyboard OR Alt-Tab to close it.
 
-# OTHERS
+# ⭐ OTHERS
 lib files contain all the library and other tools we used for the project.
 Source codes only contain the codes that I have worked on. (feel free to ask for the entire repo with entire solution and full source code).
