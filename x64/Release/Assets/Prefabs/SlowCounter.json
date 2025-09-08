@@ -1,0 +1,67 @@
+{
+    "entities": [
+        {
+            "type": "Text",
+            "components": {
+                "TransformComponent": {
+                    "x": 245.69390869140625,
+                    "y": 986.9443359375,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "SlowCounter"
+                },
+                "RenderComponent": {
+                    "textureID": "Hover_TXTBTN_TitleScreen.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Slow Count: 1",
+                    "fontSize": 0.6000000238418579,
+                    "color": [
+                        0.30083468556404114,
+                        0.3339458107948303,
+                        0.12379158288240433
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -50.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 0.0,
+                    "baseY": 0.0
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 0.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "TextPopUp",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": 0.0,
+                    "endPosition": 0.0
+                }
+            }
+        }
+    ]
+}

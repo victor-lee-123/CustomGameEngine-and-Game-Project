@@ -1,0 +1,98 @@
+{
+    "entities": [
+      {
+        "type": "Background",
+        "components": {
+          "TransformComponent": {
+            "x": 960.0,
+            "y": 540.0,
+            "scaleX": 1920.0,
+            "scaleY": 1080.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "CreditsBG",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "Sprite"
+          },
+          "LayerComponent": {
+            "LayerID": 3,
+            "SortID": 0
+          }
+        }
+      },
+      {
+        "type": "CreditsOverlay",
+        "components": {
+          "TransformComponent": {
+            "x": 960.0,
+            "y": 5000.0,
+            "scaleX": 1920.0,
+            "scaleY": 7784.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "CreditOverlayContents",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "Sprite"
+          },
+          "LayerComponent": {
+            "LayerID": 3,
+            "SortID": 1
+          },
+          "TimelineComponent": {
+          "InternalTimer": 0.0,
+          "TransitionDuration": 40.0,
+          "TransitionInDelay": 0,
+          "TransitionOutDelay": 0,
+          "TransitionInFunctionName": "CreditsY",
+          "TransitionOutFunctionName": "",
+          "Active": true,
+          "IsTransitioningIn": true,
+          "TimelineTag": "",
+          "startPosition": 5000.0,
+          "endPosition": -3700.0
+        }
+        }
+      },
+      {
+        "type": "BackButton",
+        "components": {
+          "TransformComponent": {
+            "x": 115.8933334350586,
+            "y": 124.37093353271484,
+            "scaleX": 121.0,
+            "scaleY": 86.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "Button_ArrowBTN_L.png",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "Sprite"
+          },
+          "LayerComponent": {
+            "LayerID": 3,
+            "SortID": 3
+          },
+          "ButtonComponent": {
+            "label": "BackBTN",
+            "idleTextureID": "Button_ArrowBTN_L.png",
+            "hoverTextureID": "Hover_ArrowBTN.png",
+            "pressedTextureID": "Hover_ArrowBTN.png",
+            "UpdateFunctionName": "ReturnToMenu",
+            "onClick": "ReturnToMenu",
+            "PressedAudio": "buttonclick",
+            "HoverAudio": "selectbutton",
+            "FirstHover": false,
+            "pressCooldown": 0.2,
+            "pressTimeRemaining": 0.0,
+            "state": "Idle"
+          }
+        }
+      }
+    ]
+  }
+  

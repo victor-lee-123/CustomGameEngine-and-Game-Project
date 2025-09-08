@@ -1,0 +1,87 @@
+{
+    "entities": [
+        {
+            "type": "Text",
+            "components": {
+                "TransformComponent": {
+                    "x": 657.94775390625,
+                    "y": 359.0275573730469,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "Hover_TXTBTN_TitleScreen.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.48399999737739563,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Default",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.9586586952209473,
+                        0.157207652926445,
+                        0.157207652926445
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -50.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 0.0,
+                    "baseY": 0.0
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "TextPopUp",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": 0.0,
+                    "endPosition": 0.0
+                },
+                "ParticleComponent": {
+                    "positionX": 657.94775390625,
+                    "positionY": 359.0275573730469,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "fire",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "entities": [
+        {
+            "type": "Warning_Overlay",
+            "components": {
+                "TransformComponent": {
+                    "x": 3000.0,
+                    "y": 540.0,
+                    "scaleX": 2372.0,
+                    "scaleY": 1081.0,
+                    "rotation": 0.0,
+                    "tag": "BossWarning"
+                },
+                "RenderComponent": {
+                    "textureID": "BossIncomingOverlay",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 2.0,
+                    "TransitionInFunctionName": "SlideInElastic",
+                    "TransitionOutFunctionName": "SlideOutWarning",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": 3000.0,
+                    "endPosition": 960.0
+                }
+            }
+        }
+    ]
+}

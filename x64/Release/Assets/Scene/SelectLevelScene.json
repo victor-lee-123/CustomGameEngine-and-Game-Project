@@ -1,0 +1,684 @@
+{
+    "entities": [
+        {
+            "type": "Cover",
+            "components": {
+                "TransformComponent": {
+                    "x": 950.0,
+                    "y": 510.0,
+                    "scaleX": 2000.0,
+                    "scaleY": 1100.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TitleBackground.png",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 5.0,
+                    "TransitionInFunctionName": "SlideInElastic",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": 950.0,
+                    "endPosition": -1200.0
+                }
+            }
+        },
+        {
+            "type": "TitleBackground",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 540.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 360.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_Guide.png",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 5
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "",
+                    "TransitionOutFunctionName": "FadeOut",
+                    "Active": true,
+                    "IsTransitioningIn": false,
+                    "TimelineTag": "",
+                    "startPosition": 960.0,
+                    "endPosition": 960.0
+                }
+            }
+        },
+        {
+        "type": "BigSteam",
+        "components": {
+          "TransformComponent": {
+              "x": 100.0,
+              "y": 430.0,
+              "scaleX": 174.0,
+              "scaleY": 234.0,
+              "rotation": 0.0
+          },
+            "RenderComponent": {
+                "textureID": "BigSteamAnim",
+                "color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "alpha": 1.00,
+                "renderType": "Sprite"
+            },
+            "AnimationComponent": {
+              "animationSpeed": 8.0,
+              "rows": 3,
+              "cols": 5
+            },
+            "LayerComponent": {
+                "LayerID": 3,
+                "SortID": 3
+            }  
+          }
+        },
+        {
+            "type": "SelectLevel",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": -400.0,
+                    "scaleX": 1365.0,
+                    "scaleY": 951.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "LevelSelectBoard",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 5
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "SlideY",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -400.0,
+                    "endPosition": 510.0
+                }
+            }
+        },
+        {
+            "type": "Sign",
+            "components": {
+                "TransformComponent": {
+                    "x": -200.0,
+                    "y": 800.0,
+                    "scaleX": 203.0,
+                    "scaleY": 739.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "SignPost",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 0.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 5.0,
+                    "TransitionInFunctionName": "SlideInElastic",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -200.0,
+                    "endPosition": 180.0
+                }
+            }
+        },
+        {
+            "type": "Back",
+            "components": {
+                "TransformComponent": {
+                    "x": 172.0,
+                    "y": 625.0,
+                    "scaleX": 284.0,
+                    "scaleY": 130.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "Button_BackBTN.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "Button_BackBTN.png",
+                    "hoverTextureID": "Hover_BackBTN.png",
+                    "pressedTextureID": "Hover_BackBTN.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.0,
+                    "TransitionInDelay": 1.0,
+                    "TransitionOutDelay": 5.0,
+                    "TransitionInFunctionName": "SlideInElastic",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -200.0,
+                    "endPosition": 185.0
+                }
+            }
+        },
+        {
+            "type": "Sky",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 515.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_Background.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Background",
+            "components": {
+                "TransformComponent": {
+                    "x": 1165.0,
+                    "y": 810.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BG.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Clouds",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 290.0,
+                    "scaleX": 2049.0,
+                    "scaleY": 1418.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_CloudsProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.7630000114440918,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "Foreground",
+            "components": {
+                "TransformComponent": {
+                    "x": 801.0,
+                    "y": 766.0,
+                    "scaleX": 2049.0,
+                    "scaleY": 1419.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TitleScreen_ForegroundProp.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "TutorialBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 955.0,
+                    "y": 315.0,
+                    "scaleX": 1163.0,
+                    "scaleY": 134.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TutorialBTN",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 7
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "TutorialBTN",
+                    "hoverTextureID": "Hover_TutorialBTN",
+                    "pressedTextureID": "Hover_TutorialBTN",
+                    "UpdateFunctionName": "LoadTutorial",
+                    "onClick": "LoadTutorial",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "SlideY",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -400.0,
+                    "endPosition": 315.0
+                }
+            }
+        },
+        {
+            "type": "EasyBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 955.0,
+                    "y": 470.0,
+                    "scaleX": 1163.0,
+                    "scaleY": 134.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "EasyBTN",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 7
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "EasyBTN",
+                    "hoverTextureID": "Hover_EasyBTN",
+                    "pressedTextureID": "Hover_EasyBTN",
+                    "UpdateFunctionName": "LoadEasy",
+                    "onClick": "LoadEasy",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "SlideY",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -400.0,
+                    "endPosition": 470.0
+                }
+            }
+        },
+        {
+            "type": "HardBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 955.0,
+                    "y": 630.0,
+                    "scaleX": 1163.0,
+                    "scaleY": 134.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "HardBTN",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 7
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "HardBTN",
+                    "hoverTextureID": "Hover_HardBTN",
+                    "pressedTextureID": "Hover_HardBTN",
+                    "UpdateFunctionName": "LoadHard",
+                    "onClick": "LoadHard",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "SlideY",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -400.0,
+                    "endPosition": 630.0
+                }
+            }
+        },
+        {
+            "type": "BossBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 955.0,
+                    "y": 780.0,
+                    "scaleX": 1163.0,
+                    "scaleY": 134.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BossBTN",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 7
+                },
+                "ButtonComponent": {
+                    "label": "BackBTN",
+                    "idleTextureID": "BossBTN",
+                    "hoverTextureID": "Hover_BossBTN",
+                    "pressedTextureID": "Hover_BossBTN",
+                    "UpdateFunctionName": "LoadBoss",
+                    "onClick": "LoadBoss",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 1.0,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "SlideY",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": -400.0,
+                    "endPosition": 780.0
+                }
+            }
+        },
+        {
+            "type": "BigSteam2",
+            "components": {
+                "TransformComponent": {
+                    "x": 837.0,
+                    "y": 890.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BigSteam",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.9710000157356262,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 4
+                }
+            }
+        }
+    ]
+}

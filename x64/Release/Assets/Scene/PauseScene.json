@@ -1,0 +1,148 @@
+{
+    "entities": [
+      {
+        "type": "PauseBackground",
+        "components": {
+          "TransformComponent": {
+            "x": 800.0,
+            "y": 450.0,
+            "scaleX": 1600.0,
+            "scaleY": 900.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "blackback",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 0.5,
+            "renderType": "PauseUI",
+            "isActive": false
+          },
+          "LayerComponent": {
+            "LayerID": 4,
+            "SortID": 1
+          }
+        }
+      },
+      {
+        "type": "ResumeButton",
+        "components": {
+          "TransformComponent": {
+            "x": 800.0,
+            "y": 300.0,
+            "scaleX": 400.0,
+            "scaleY": 150.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "PlayButton",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "PauseUI",
+            "isActive": false
+          },
+          "ButtonComponent": {
+            "label": "Resume",
+            "idleTextureID": "PlayButton",
+            "hoverTextureID": "PlayButton",
+            "pressedTextureID": "ResumeButtonPressed",
+            "onClick": "ResumeGame"
+          },
+          "LayerComponent": {
+            "LayerID": 4,
+            "SortID": 2
+          }
+        }
+      },
+      {
+        "type": "HowToPlay",
+        "components": {
+          "TransformComponent": {
+            "x": 800.0,
+            "y": 500.0,
+            "scaleX": 400.0,
+            "scaleY": 150.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "HowToPlayButton",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "PauseUI",
+            "isActive": false
+          },
+          "ButtonComponent": {
+            "label": "Options",
+            "idleTextureID": "HowToPlayButton",
+            "hoverTextureID": "HowToPlayButton",
+            "pressedTextureID": "BackToMenuButtonPressed",
+            "onClick": "LoadHowToPlay"
+          },
+          "LayerComponent": {
+            "LayerID": 4,
+            "SortID": 2
+          }
+        }
+      },
+      {
+        "type": "ReturnToMenu",
+        "components": {
+          "TransformComponent": {
+            "x": 800.0,
+            "y": 700.0,
+            "scaleX": 400.0,
+            "scaleY": 150.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "QuitButton",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "PauseUI",
+            "isActive": false
+          },
+          "ButtonComponent": {
+            "label": "QuitButton",
+            "idleTextureID": "QuitButton",
+            "hoverTextureID": "QuitButton",
+            "pressedTextureID": "QuitGameButtonPressed",
+            "onClick": "ReturnToMenu"
+          },
+          "LayerComponent": {
+            "LayerID": 4,
+            "SortID": 4
+          }
+        }
+      },
+      {
+        "type": "QuitGame",
+        "components": {
+          "TransformComponent": {
+            "x": 800.0,
+            "y": 900.0,
+            "scaleX": 400.0,
+            "scaleY": 150.0,
+            "rotation": 0.0
+          },
+          "RenderComponent": {
+            "textureID": "QuitButton",
+            "color": [1.0, 1.0, 1.0],
+            "alpha": 1.0,
+            "renderType": "PauseUI",
+            "isActive": false
+          },
+          "ButtonComponent": {
+            "label": "QuitButton",
+            "idleTextureID": "QuitButton",
+            "hoverTextureID": "QuitButton",
+            "pressedTextureID": "QuitGameButtonPressed",
+            "onClick": "ExitGame"
+          },
+          "LayerComponent": {
+            "LayerID": 4,
+            "SortID": 4
+          }
+        }
+      }
+    ]
+  }
+  

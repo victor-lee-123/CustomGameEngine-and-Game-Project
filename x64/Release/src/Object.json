@@ -1,0 +1,94 @@
+{
+  "objects": [
+    {
+      "type": "collidableObject",
+      "position": {
+        "x": 800.0,
+        "y": 400.0
+      },
+      "size": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "velocity": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "renderComponent": {
+        "textureAddress": "path/to/player_texture.png"
+      }
+    },
+    {
+      "type": "collidableObject",
+      "position": {
+        "x": 1500.0,
+        "y": 400.0
+      },
+      "size": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "velocity": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "renderComponent": {
+        "textureAddress": "path/to/background_texture.png"
+      }
+    },
+    {
+      "type": "collidableObject",
+      "position": {
+        "x": 800.0,
+        "y": 800.0
+      },
+      "size": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "velocity": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "renderComponent": {
+        "textureAddress": "path/to/obstacle_texture.png"
+      }
+    },
+    {
+      "type": "collidableObject",
+      "position": {
+        "x": 1500.0,
+        "y": 800.0
+      },
+      "size": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "velocity": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "renderComponent": {
+        "textureAddress": "path/to/tree_texture.png"
+      }
+    },
+    {
+      "type": "player",
+      "position": {
+        "x": 500.0,
+        "y": 800.0
+      },
+      "size": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "velocity": {
+        "x": 200.0,
+        "y": 200.0
+      },
+      "renderComponent": {
+        "textureAddress": "path/to/rock_texture.png"
+      }
+    }
+  ]
+}

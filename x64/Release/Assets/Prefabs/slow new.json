@@ -1,0 +1,87 @@
+{
+    "entities": [
+        {
+            "type": "Text",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 540.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "SlowUI",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.324530690908432,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 2,
+                    "SortID": 5
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 0.0,
+                    "baseY": 0.0
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.5679287314414978,
+                    "TransitionDuration": 3.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 0.0,
+                    "TransitionInFunctionName": "SlowAbilityPrefab",
+                    "TransitionOutFunctionName": "",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": 0.0,
+                    "endPosition": 0.0
+                },
+                "ParticleComponent": {
+                    "positionX": 960.0,
+                    "positionY": 540.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 30.0,
+                    "life": 1.5,
+                    "active": true,
+                    "emissionRate": 1000.0,
+                    "textureName": "fire",
+                    "shape": "EXPLOSION",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,2560 @@
+{
+    "entities": [
+        {
+            "type": "Player&Textbox&S",
+            "components": {
+                "TransformComponent": {
+                    "x": 1223.0,
+                    "y": 1003.0,
+                    "scaleX": 2048.0,
+                    "scaleY": 2048.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_4"
+                },
+                "RenderComponent": {
+                    "textureID": "Textbox_bg.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Sample Text",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Exo2",
+                    "offset": [
+                        -650.0,
+                        11.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 2,
+                    "SortID": 4
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "PlayerComponent": {
+                    "CurrentText": "",
+                    "type": "Unknown",
+                    "health": 0.0
+                }
+            }
+        },
+        {
+            "type": "Cover",
+            "components": {
+                "TransformComponent": {
+                    "x": 2950.0,
+                    "y": 510.0,
+                    "scaleX": 2000.0,
+                    "scaleY": 1100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_5"
+                },
+                "RenderComponent": {
+                    "textureID": "TitleBackground",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.0,
+                    "TransitionInDelay": 1.0,
+                    "TransitionOutDelay": 1.0,
+                    "TransitionInFunctionName": "SlideOut",
+                    "TransitionOutFunctionName": "ScaleUp",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "MainMenuTransition",
+                    "startPosition": 950.0,
+                    "endPosition": 2950.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_1",
+            "components": {
+                "TransformComponent": {
+                    "x": -100.0,
+                    "y": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_6"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "T",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 1.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_2",
+            "components": {
+                "TransformComponent": {
+                    "x": 2000.0,
+                    "y": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_7"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "F",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 6.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_3",
+            "components": {
+                "TransformComponent": {
+                    "x": -100.0,
+                    "y": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_8"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "R",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 12.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_4",
+            "components": {
+                "TransformComponent": {
+                    "x": 200.0,
+                    "y": 1000.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_9"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "G",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 17.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_5",
+            "components": {
+                "TransformComponent": {
+                    "x": 600.0,
+                    "y": 1000.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_10"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Si",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 23.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_6",
+            "components": {
+                "TransformComponent": {
+                    "x": 200.0,
+                    "y": 1000.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_11"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Te",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 23.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_7big",
+            "components": {
+                "TransformComponent": {
+                    "x": 1000.0,
+                    "y": 1000.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_12"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Ho",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 100.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 130.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 32.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_8",
+            "components": {
+                "TransformComponent": {
+                    "x": 1500.0,
+                    "y": 1500.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_13"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "E",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 32.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_9",
+            "components": {
+                "TransformComponent": {
+                    "x": 1800.0,
+                    "y": 500.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_14"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Lo",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 40.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_10",
+            "components": {
+                "TransformComponent": {
+                    "x": 1700.0,
+                    "y": 800.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_15"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Da",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 40.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_11BIG",
+            "components": {
+                "TransformComponent": {
+                    "x": 1000.0,
+                    "y": -100.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_16"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Th",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 50.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_12",
+            "components": {
+                "TransformComponent": {
+                    "x": 0.0,
+                    "y": -100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_17"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "J",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 1.0,
+                    "collisionScaleY": 1.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 56.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_13",
+            "components": {
+                "TransformComponent": {
+                    "x": -100.0,
+                    "y": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_18"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "T",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 56.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_14",
+            "components": {
+                "TransformComponent": {
+                    "x": -100.0,
+                    "y": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_19"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "F",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 61.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_15BIG",
+            "components": {
+                "TransformComponent": {
+                    "x": 1900.0,
+                    "y": 83.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_20"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "R",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 61.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_16BIG",
+            "components": {
+                "TransformComponent": {
+                    "x": 200.0,
+                    "y": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_21"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "G",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 50.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 68.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_17BIG",
+            "components": {
+                "TransformComponent": {
+                    "x": 600.0,
+                    "y": 1000.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_22"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Si",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 68.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_18BIG",
+            "components": {
+                "TransformComponent": {
+                    "x": 200.0,
+                    "y": 1000.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_23"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Te",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 75.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_19BIG",
+            "components": {
+                "TransformComponent": {
+                    "x": 1000.0,
+                    "y": 1000.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_24"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Ho",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 75.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_23Superbig",
+            "components": {
+                "TransformComponent": {
+                    "x": 1000.0,
+                    "y": -100.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_25"
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdleSprite",
+                    "color": [
+                        0.8199999928474426,
+                        0.11800000071525574,
+                        0.11800000071525574
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Th",
+                    "fontSize": 1.0,
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 50.0,
+                    "baseY": 50.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Poison",
+                    "health": 300.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 82.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 6
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "ParticleComponent": {
+                    "positionX": 0.0,
+                    "positionY": 0.0,
+                    "velocityX": 0.10000000149011612,
+                    "velocityY": 0.10000000149011612,
+                    "colorR": 1.0,
+                    "colorG": 1.0,
+                    "colorB": 1.0,
+                    "size": 50.0,
+                    "life": 2.0,
+                    "active": true,
+                    "emissionRate": 50.0,
+                    "textureName": "SmokeParticles",
+                    "shape": "RANDOM",
+                    "radius": 10.0,
+                    "boxSizeX": 10.0,
+                    "boxSizeY": 10.0,
+                    "spiralTurns": 3.0,
+                    "coneAngle": 45.0
+                }
+            }
+        },
+        {
+            "type": "Player",
+            "components": {
+                "TransformComponent": {
+                    "x": 900.0,
+                    "y": 450.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "McIdleSprite",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 2,
+                    "SortID": 3
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 200.0,
+                    "baseY": 200.0
+                },
+                "CollisionComponent": {
+                    "type": "Player",
+                    "collided": false,
+                    "collisionScaleX": 70.0,
+                    "collisionScaleY": 80.0,
+                    "radius": 50.0
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 8.0,
+                    "rows": 2,
+                    "cols": 4
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "PlayerComponent": {
+                    "CurrentText": "",
+                    "type": "Player",
+                    "health": 3.0
+                }
+            }
+        },
+        {
+            "type": "Background",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 540.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": "Entity_27"
+                },
+                "RenderComponent": {
+                    "textureID": "Level1_Scene",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        },
+        {
+            "type": "PauseBackground",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 546.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BG_PauseUI.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.5,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "ResumeButton",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 465.0,
+                    "scaleX": 235.0,
+                    "scaleY": 69.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Resume.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 2
+                },
+                "ButtonComponent": {
+                    "label": "Resume",
+                    "idleTextureID": "TXTBTN_Resume.png",
+                    "hoverTextureID": "Hover_TXTBTN_Resume.png",
+                    "pressedTextureID": "Hover_TXTBTN_Resume.png",
+                    "UpdateFunctionName": "ResumeGame",
+                    "onClick": "ResumeGame",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Pause_HowtoPlay",
+            "components": {
+                "TransformComponent": {
+                    "x": 958.0,
+                    "y": 570.0,
+                    "scaleX": 390.0,
+                    "scaleY": 110.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_HowtoPlay.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 2
+                },
+                "ButtonComponent": {
+                    "label": "HowtoPlayBTN",
+                    "idleTextureID": "TXTBTN_HowtoPlay.png",
+                    "hoverTextureID": "Hover_TXTBTN_HowtoPlay.png",
+                    "pressedTextureID": "Hover_TXTBTN_HowtoPlay.png",
+                    "UpdateFunctionName": "ToggleHowToPlayFromPause",
+                    "onClick": "ToggleHowToPlayFromPause",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "ReturnToMenu",
+            "components": {
+                "TransformComponent": {
+                    "x": 956.0,
+                    "y": 674.0,
+                    "scaleX": 575.0,
+                    "scaleY": 76.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_TitleScreen.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 4
+                },
+                "ButtonComponent": {
+                    "label": "BacktoTitleScreen",
+                    "idleTextureID": "TXTBTN_TitleScreen.png",
+                    "hoverTextureID": "Hover_TXTBTN_TitleScreen.png",
+                    "pressedTextureID": "Hover_TXTBTN_TitleScreen.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "QuitGame",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 780.0,
+                    "scaleX": 329.0,
+                    "scaleY": 80.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_QuitGame.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 4
+                },
+                "ButtonComponent": {
+                    "label": "QuitGameBTN",
+                    "idleTextureID": "TXTBTN_QuitGame.png",
+                    "hoverTextureID": "Hover_TXTBTN_QuitGame.png",
+                    "pressedTextureID": "Hover_TXTBTN_QuitGame.png",
+                    "UpdateFunctionName": "ExitGameEvent",
+                    "onClick": "ExitGameEvent",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "HowToPlayBackground",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 450.0,
+                    "scaleX": 1600.0,
+                    "scaleY": 900.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BG_HowtoPlay.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 4
+                }
+            }
+        },
+        {
+            "type": "BackButton(HowToPlay)",
+            "components": {
+                "TransformComponent": {
+                    "x": 1400.0,
+                    "y": 704.0,
+                    "scaleX": 370.0,
+                    "scaleY": 165.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BackButton",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 4
+                },
+                "ButtonComponent": {
+                    "label": "Play",
+                    "idleTextureID": "BackButton",
+                    "hoverTextureID": "BackButton",
+                    "pressedTextureID": "BackButton",
+                    "UpdateFunctionName": "ReturnToPauseFromhowToPlay",
+                    "onClick": "ReturnToPauseFromhowToPlay",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "LoseUIBG",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 527.5,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BG_GameoverUI.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 2
+                }
+            }
+        },
+        {
+            "type": "Lose_ReturnToMenu",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 650.0,
+                    "scaleX": 575.0,
+                    "scaleY": 76.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_TitleScreen.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 2
+                },
+                "ButtonComponent": {
+                    "label": "BacktoTitleScreen",
+                    "idleTextureID": "TXTBTN_TitleScreen.png",
+                    "hoverTextureID": "Hover_TXTBTN_TitleScreen.png",
+                    "pressedTextureID": "Hover_TXTBTN_TitleScreen.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Lose_RetryBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 566.0,
+                    "scaleX": 185.0,
+                    "scaleY": 93.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Retry.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 2
+                },
+                "ButtonComponent": {
+                    "label": "RetryButton",
+                    "idleTextureID": "TXTBTN_Retry.png",
+                    "hoverTextureID": "Hover_TXTBTN_Retry.png",
+                    "pressedTextureID": "Hover_TXTBTN_Retry.png",
+                    "UpdateFunctionName": "RetryGameLevel",
+                    "onClick": "RetryGameLevel",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Win_ReturnToMenu",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 765.0,
+                    "scaleX": 575.0,
+                    "scaleY": 76.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_TitleScreen.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BacktoTitleScreen",
+                    "idleTextureID": "TXTBTN_TitleScreen.png",
+                    "hoverTextureID": "Hover_TXTBTN_TitleScreen.png",
+                    "pressedTextureID": "Hover_TXTBTN_TitleScreen.png",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Win_RetryBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 677.0,
+                    "scaleX": 185.0,
+                    "scaleY": 93.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_Retry.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "WinRetryButton",
+                    "idleTextureID": "TXTBTN_Retry.png",
+                    "hoverTextureID": "Hover_TXTBTN_Retry.png",
+                    "pressedTextureID": "Hover_TXTBTN_Retry.png",
+                    "UpdateFunctionName": "RetryGameLevel",
+                    "onClick": "RetryGameLevel",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "Win_NextLvlBTN",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 572.0,
+                    "scaleX": 321.0,
+                    "scaleY": 78.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "TXTBTN_NextLvl.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 3
+                },
+                "ButtonComponent": {
+                    "label": "BacktoTitleScreen",
+                    "idleTextureID": "TXTBTN_NextLvl.png",
+                    "hoverTextureID": "Hover_TXTBTN_NextLvl.png",
+                    "pressedTextureID": "Hover_TXTBTN_NextLvl.png",
+                    "UpdateFunctionName": "RetryGameLevel",
+                    "onClick": "RetryGameLevel",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "WinBG",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 546.0,
+                    "scaleX": 1920.0,
+                    "scaleY": 1080.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "BG_ClearedUI.png",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 2
+                }
+            }
+        },
+        {
+            "type": "Entity 42",
+            "components": {
+                "TransformComponent": {
+                    "x": 960.0,
+                    "y": 525.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0,
+                    "tag": ""
+                },
+                "RenderComponent": {
+                    "textureID": "",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                }
+            }
+        }
+    ]
+}

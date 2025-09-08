@@ -1,0 +1,63 @@
+{
+    "entities": [
+        {
+            "type": "Warning_Animation",
+            "components": {
+                "TransformComponent": {
+                    "x": 3000.0,
+                    "y": 540.0,
+                    "scaleX": 1086.0,
+                    "scaleY": 191.60000610351563,
+                    "rotation": 0.0,
+                    "tag": "BossWarning"
+                },
+                "RenderComponent": {
+                    "textureID": "BossIncomingAnimation",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16.0,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 3,
+                    "SortID": 1
+                },
+                "AnimationComponent": {
+                    "animationSpeed": 15.0,
+                    "rows": 3,
+                    "cols": 4
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.5,
+                    "TransitionInDelay": 0.0,
+                    "TransitionOutDelay": 2.0,
+                    "TransitionInFunctionName": "SlideInElastic",
+                    "TransitionOutFunctionName": "SlideOutWarning",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "",
+                    "startPosition": 3000.0,
+                    "endPosition": 960.0
+                }
+            }
+        }
+    ]
+}

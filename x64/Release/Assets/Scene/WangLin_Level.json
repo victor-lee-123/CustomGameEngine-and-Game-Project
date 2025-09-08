@@ -1,0 +1,1210 @@
+{
+    "entities": [
+        {
+            "type": "Player&Textbox&S",
+            "components": {
+                "TransformComponent": {
+                    "x": 400.0,
+                    "y": 800.0,
+                    "scaleX": 750.0,
+                    "scaleY": 156.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "textbox",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Sample Text",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -170.0,
+                        10.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 2,
+                    "SortID": 4
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 0.0,
+                    "baseY": 0.0
+                },
+                "CollisionComponent": {
+                    "type": "CollidableObject",
+                    "collided": false,
+                    "radius": 0.0
+                },
+                "EnemyComponent": {
+                    "type": "Boss",
+                    "health": 0.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 0.0,
+                    "spawnTimer": 0.0
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                },
+                "PlayerComponent": {
+                    "CurrentText": ""
+                }
+            }
+        },
+        {
+            "type": "Cover",
+            "components": {
+                "TransformComponent": {
+                    "x": 2700.0,
+                    "y": 467.9748229980469,
+                    "scaleX": 2000.0,
+                    "scaleY": 900.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "TitleBackground",
+                    "color": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 0
+                },
+                "TimelineComponent": {
+                    "InternalTimer": 0.0,
+                    "TransitionDuration": 2.0,
+                    "TransitionDelay": 1.0,
+                    "TransitionOutDelay": 1.0,
+                    "TransitionInFunctionName": "SlideOut",
+                    "TransitionOutFunctionName": "ScaleUp",
+                    "Active": true,
+                    "IsTransitioningIn": true,
+                    "TimelineTag": "MainMenuTransition",
+                    "startPosition": 700.0,
+                    "endPosition": 2800.0
+                }
+            }
+        },
+        {
+            "type": "Enemy_1",
+            "components": {
+                "TransformComponent": {
+                    "x": 100.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "T",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 2.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_2",
+            "components": {
+                "TransformComponent": {
+                    "x": 200.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "F",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 5.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_3",
+            "components": {
+                "TransformComponent": {
+                    "x": 300.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "R",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 10.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_4",
+            "components": {
+                "TransformComponent": {
+                    "x": 400.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "G",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 15.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_5",
+            "components": {
+                "TransformComponent": {
+                    "x": 500.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Si",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 20.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_6",
+            "components": {
+                "TransformComponent": {
+                    "x": 600.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Te",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 3.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_7",
+            "components": {
+                "TransformComponent": {
+                    "x": 700.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Ho",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 5.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_8",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "E",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 10.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_9",
+            "components": {
+                "TransformComponent": {
+                    "x": 900.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Lo",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 15.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_10",
+            "components": {
+                "TransformComponent": {
+                    "x": 1000.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Da",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 20.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_11",
+            "components": {
+                "TransformComponent": {
+                    "x": 1100.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "Th",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -30.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 7.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Enemy_12",
+            "components": {
+                "TransformComponent": {
+                    "x": 1200.0,
+                    "y": 100.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "PoisonIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "J",
+                    "fontSize": 1,
+                    "color": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        -15.0,
+                        100.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 1,
+                    "SortID": 1
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 100.0,
+                    "baseY": 100.0
+                },
+                "CollisionComponent": {
+                    "type": "Enemy",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Minion",
+                    "health": 100.0,
+                    "UpdateFunctionName": "ChasePlayer",
+                    "spawned": false,
+                    "spawnRate": 5.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.10000000149011612,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "PoisonIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Player",
+            "components": {
+                "TransformComponent": {
+                    "x": 900.0,
+                    "y": 450.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "McIdle1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "TextComponent": {
+                    "text": "",
+                    "fontSize": 16,
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "fontName": "Salmon",
+                    "offset": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "LayerComponent": {
+                    "LayerID": 2,
+                    "SortID": 3
+                },
+                "MovementComponent": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "baseX": 200.0,
+                    "baseY": 200.0
+                },
+                "CollisionComponent": {
+                    "type": "Player",
+                    "collided": false,
+                    "radius": 50.0
+                },
+                "EnemyComponent": {
+                    "type": "Boss",
+                    "health": 3.0,
+                    "UpdateFunctionName": "",
+                    "spawned": false,
+                    "spawnRate": 0.0,
+                    "spawnTimer": 0.0
+                },
+                "AnimationComponent": {
+                    "interval": 0.03999999910593033,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "McIdle"
+                },
+                "BulletComponent": {
+                    "targetId": 0
+                }
+            }
+        },
+        {
+            "type": "Background",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 450.0,
+                    "scaleX": 1600.0,
+                    "scaleY": 900.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "GameBackground1",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "Sprite"
+                },
+                "LayerComponent": {
+                    "LayerID": 0,
+                    "SortID": 0
+                },
+                "AnimationComponent": {
+                    "interval": 0.07999999821186066,
+                    "animationIndex": 0,
+                    "totalFrameTime": 0.0,
+                    "key": "Background"
+                }
+            }
+        },
+        {
+            "type": "PauseBackground",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 450.0,
+                    "scaleX": 1600.0,
+                    "scaleY": 900.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "blackback",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 0.5,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 1
+                }
+            }
+        },
+        {
+            "type": "ResumeButton",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 200.0,
+                    "scaleX": 400.0,
+                    "scaleY": 150.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "ResumeGameButton",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 2
+                },
+                "ButtonComponent": {
+                    "label": "Resume",
+                    "idleTextureID": "ResumeGameButton",
+                    "hoverTextureID": "ResumeGameButton",
+                    "pressedTextureID": "ResumeGameButton",
+                    "UpdateFunctionName": "ResumeGame",
+                    "onClick": "ResumeGame",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "HowToPlay",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 400.0,
+                    "scaleX": 400.0,
+                    "scaleY": 150.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "HowToPlayButton",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 2
+                },
+                "ButtonComponent": {
+                    "label": "Options",
+                    "idleTextureID": "HowToPlayButton",
+                    "hoverTextureID": "HowToPlayButton",
+                    "pressedTextureID": "BackToMenuButtonPressed",
+                    "UpdateFunctionName": "LoadHowToPlay",
+                    "onClick": "LoadHowToPlay",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "ReturnToMenu",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 600.0,
+                    "scaleX": 400.0,
+                    "scaleY": 150.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "BackToHomeButton",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 4
+                },
+                "ButtonComponent": {
+                    "label": "QuitButton",
+                    "idleTextureID": "BackToHomeButton",
+                    "hoverTextureID": "BackToHomeButton",
+                    "pressedTextureID": "BackToHomeButton",
+                    "UpdateFunctionName": "ReturnToMenu",
+                    "onClick": "ReturnToMenu",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        },
+        {
+            "type": "QuitGame",
+            "components": {
+                "TransformComponent": {
+                    "x": 800.0,
+                    "y": 800.0,
+                    "scaleX": 400.0,
+                    "scaleY": 150.0,
+                    "rotation": 0.0
+                },
+                "RenderComponent": {
+                    "textureID": "QuitGameButton",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "renderType": "PauseUI"
+                },
+                "LayerComponent": {
+                    "LayerID": 4,
+                    "SortID": 4
+                },
+                "ButtonComponent": {
+                    "label": "QuitGameButton",
+                    "idleTextureID": "QuitGameButton",
+                    "hoverTextureID": "QuitGameButton",
+                    "pressedTextureID": "QuitGameButton",
+                    "UpdateFunctionName": "ExitGame",
+                    "onClick": "ExitGame",
+                    "PressedAudio": "buttonclick",
+                    "HoverAudio": "selectbutton",
+                    "FirstHover": false,
+                    "pressCooldown": 0.20000000298023224,
+                    "pressTimeRemaining": 0.0,
+                    "state": "Idle"
+                }
+            }
+        }
+    ]
+}
