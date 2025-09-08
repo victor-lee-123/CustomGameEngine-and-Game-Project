@@ -4,7 +4,7 @@ Custom Game Engine Project created with a group of developers and UI/UX engineer
 
 # Unnamed Engine created by UnnamedStudio
 Unnamed Studio Engine is an engine specialized to various games, with an approach to scalability via utilizing ECS and components and thus allowing a modular and flexible developmental scaling. 
-The studio comprises of a eight Year 2 computer science and UI/UX students from Singapore Institure of Technology.
+The studio comprises of a eight Year 2 computer science and UI/UX students from Singapore Institure of Technology (Joint degree with Digipen Institute of Technology).
 
 The engine is programmed in C++ and uses OpenGL and GLSL as our graphics API. This programming language allows the team to focus on best practices and apply object-oriented programming design in our system structure. Our goal when coding the engine editor/game is to aim to implement a modular scalable system that allows the general development of games, in that of applying reusability through a Component/System-based system design with ECS.
 
