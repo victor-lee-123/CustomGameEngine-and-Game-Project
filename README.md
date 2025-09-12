@@ -26,5 +26,16 @@ The game engine runs as a pause state and there will be no running entities show
 To exit out of fullscreen, press "-" button on keyboard OR Alt-Tab to close it.
 
 # ⭐ OTHERS
-lib files contain all the library and other tools we used for the project.
+Libraries used:
+- FMOD
+- freetype
+- glew
+- glfw
+- gleq
+- glm
+- imgui
+- lodepng
+- stb_image
+- tinyobjloader
 Source codes only contain the codes that I have worked on. (feel free to ask for the entire repo with entire solution and full source code).
+⚠️Current status of the engine is being upgraded to a 3D Engine with more sophisticated features(ongoing).
